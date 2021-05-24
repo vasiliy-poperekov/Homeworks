@@ -1,9 +1,9 @@
 package com.Homework3
 
-open class Animal(private val speed:Double) {
-    public fun time (distance:Double=CONSTDISTANCE):Double=distance/speed
+open class Animal(private val speed: Double) {
+    fun time(): Double = CONSTDISTANCE / speed
 
-    companion object{
+    companion object {
         const val CONSTDISTANCE = 1080.0
     }
 }

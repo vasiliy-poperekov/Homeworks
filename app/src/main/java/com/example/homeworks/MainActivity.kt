@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dog = Dog("Bob")
-        val elephant = Elephant("Elph")
+        val dog = Dog("Bob", 25.0)
+        val elephant = Elephant("Elph", 10.0)
 
-        println(dog)
-        println(elephant)
+        println("${dog.name} пробежал за ${dog.time()}")
+        println("${elephant.name} пробежал за ${elephant.time()}")
     }
 }
