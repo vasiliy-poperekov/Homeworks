@@ -1,4 +1,4 @@
-package com.homework4
+package com.example.homeworks.homework4
 
 class Worker(
     var nameW: String,

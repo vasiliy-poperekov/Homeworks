@@ -1,4 +1,4 @@
-package com.homework4
+package com.example.homeworks.homework4
 
 class Boss(
     var nameB: String,

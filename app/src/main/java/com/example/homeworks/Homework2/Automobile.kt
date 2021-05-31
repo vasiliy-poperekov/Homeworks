@@ -1,4 +1,4 @@
-package com.Homework2
+package com.example.homeworks.Homework2
 
 class Automobile(
     private val brand: String,

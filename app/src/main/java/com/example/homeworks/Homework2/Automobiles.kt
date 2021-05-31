@@ -1,4 +1,4 @@
-package com.Homework2
+package com.example.homeworks.Homework2
 
 object Automobiles {
     fun automobilesCreatorAndPrinter() {
