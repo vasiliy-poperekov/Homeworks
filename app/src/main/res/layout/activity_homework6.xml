@@ -25,7 +25,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#FF0000" />
+                android:background="@color/red" />
         </LinearLayout>
 
         <LinearLayout
@@ -42,12 +42,12 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#ED5300" />
+                android:background="@color/orange_red" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#FFC739" />
+                android:background="@color/yelow" />
         </LinearLayout>
 
         <LinearLayout
@@ -61,7 +61,7 @@
                 android:layout_width="0dp"
                 android:layout_height="175dp"
                 android:layout_weight="1"
-                android:background="#0141FF" />
+                android:background="@color/blue" />
 
             <View
                 android:layout_width="0dp"
@@ -73,7 +73,7 @@
                 android:layout_width="0dp"
                 android:layout_height="175dp"
                 android:layout_weight="1"
-                android:background="#FF0000" />
+                android:background="@color/red" />
         </LinearLayout>
 
         <LinearLayout
@@ -85,7 +85,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#A50000" />
+                android:background="@color/dark_red" />
 
             <View
                 android:layout_width="match_parent"
@@ -95,7 +95,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#A50000" />
+                android:background="@color/dark_red" />
         </LinearLayout>
 
         <FrameLayout
@@ -112,13 +112,13 @@
                 android:layout_width="100dp"
                 android:layout_height="300dp"
                 android:layout_marginStart="75dp"
-                android:background="#1F49C1" />
+                android:background="@color/dark_blue" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:background="#1F49C1" />
+                android:background="@color/dark_blue" />
         </FrameLayout>
     </LinearLayout>
 </ScrollView>
