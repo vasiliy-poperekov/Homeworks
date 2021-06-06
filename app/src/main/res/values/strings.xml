@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Homeworks</string>
+    <string name="tittle_activity2">Информация о пользователе</string>
+    <string name="login_info">Ваш логин:</string>
+    <string name="password_info">Ваш пароль:</string>
+    <string name="timer_start">10</string>
+    <string name="enter_login">Введите логин</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="button_text">Timer -1</string>
 </resources>
