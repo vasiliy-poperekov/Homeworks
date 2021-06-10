@@ -2,23 +2,22 @@ package com.example.homeworks.homework7
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import com.example.homeworks.R
+import com.example.homeworks.databinding.ActivityHomework72Binding
 
 class Homework7Activity2 : AppCompatActivity() {
-
-    lateinit var login: TextView
-    lateinit var password: TextView
+    private lateinit var binding: ActivityHomework72Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_homework72)
-
-        login = findViewById(R.id.tv_login)
-        password = findViewById(R.id.tv_password)
+        binding = ActivityHomework72Binding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val user = intent.extras!!.get(Homework7.USER) as Userdata
-        login.text = login.text.toString().plus(user.login)
-        password.text = password.text.toString().plus(user.password)
+        binding.tvLogin.text = binding.tvLogin.text.toString().plus(user.login)
+        binding.tvPassword.text = binding.tvPassword.text.toString().plus(user.password)
+
+        binding.bvClose.setOnClickListener {
+            finish()
+        }
     }
 }

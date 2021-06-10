@@ -7,4 +7,6 @@
     <string name="enter_login">Введите логин</string>
     <string name="enter_password">Введите пароль</string>
     <string name="button_text">Timer -1</string>
+    <string name="btn_close">close</string>
+    <string name="enter_text">Войти</string>
 </resources>
