@@ -56,12 +56,7 @@ class Homework7 : AppCompatActivity() {
         binding.etLogin.visibility = View.VISIBLE
         binding.etPassword.visibility = View.VISIBLE
         binding.tbBtnForTimer.text = getString(R.string.enter_text)
-        binding.tbBtnForTimer.setBackgroundColor(
-            ContextCompat.getColor(
-                this,
-                R.color.yelow
-            )
-        )
+        binding.tbBtnForTimer.setTextColor(Color.GREEN)
     }
 
 

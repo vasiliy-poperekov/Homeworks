@@ -17,6 +17,7 @@
         android:textSize="50sp" />
 
     <EditText
+        style="@style/MyEditText"
         android:id="@+id/et_login"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -26,6 +27,7 @@
         android:visibility="gone" />
 
     <EditText
+        style="@style/MyEditText"
         android:id="@+id/et_password"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -34,6 +36,7 @@
         android:visibility="gone" />
 
     <Button
+        style="@style/MyButton"
         android:id="@+id/tb_btn_for_timer"
         android:layout_width="300dp"
         android:layout_height="100dp"
