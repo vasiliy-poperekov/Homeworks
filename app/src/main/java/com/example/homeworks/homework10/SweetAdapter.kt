@@ -11,7 +11,7 @@ import com.example.homeworks.databinding.ItemSweetsBinding
 
 class SweetAdapter(
     private val sweetsList: ArrayList<Sweet>
-) : RecyclerView.Adapter<SweetAdapter.SweetViewHolder>(){
+) : RecyclerView.Adapter<SweetAdapter.SweetViewHolder>() {
 
     override fun getItemCount(): Int = sweetsList.size
 
@@ -26,11 +26,11 @@ class SweetAdapter(
         holder.bind(sweetsList[position])
     }
 
-    class SweetViewHolder(private val itemView: View) : RecyclerView.ViewHolder(itemView){
+    class SweetViewHolder(private val itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val brand: TextView = itemView.findViewById(R.id.brand)
         private val code: TextView = itemView.findViewById(R.id.code)
 
-        fun bind(item: Sweet){
+        fun bind(item: Sweet) {
             brand.text = "Брэнд: ${item.brand}"
             code.text = "Штрихкод: ${item.code}"
         }
