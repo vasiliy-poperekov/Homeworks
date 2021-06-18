@@ -19,5 +19,11 @@
         android:layout_height="75dp"
         android:text="Button to homework 7"
         />
+    <Button
+        android:id="@+id/bv_btn_to_homework10"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Button to homework 10"
+        />
 
 </LinearLayout>
