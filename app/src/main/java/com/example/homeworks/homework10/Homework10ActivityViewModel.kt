@@ -4,10 +4,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class Homework10ActivityViewModel : ViewModel() {
-    val sweetLiveData: MutableLiveData<Sweet> = MutableLiveData()
+    val sweetLiveData: MutableLiveData<MutableList<Sweet>> = MutableLiveData()
+
+    init {
+        getSweetsInLiveData()
+    }
 
     fun getSweetsInLiveData() {
-        sweetLiveData.value =
-            SweetFactory().createThreeHundredSweets()[SweetFactory().createThreeHundredSweets().size - 1]
+        sweetLiveData.value = SweetFactory().createThreeHundredSweets()
     }
 }

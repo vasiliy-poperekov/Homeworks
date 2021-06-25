@@ -11,7 +11,6 @@ import com.example.homeworks.databinding.ActivityHomework10Binding
 class Homework10Activity : AppCompatActivity() {
     private lateinit var binding: ActivityHomework10Binding
     private val myViewModel: Homework10ActivityViewModel by viewModels()
-    private val sweetFactory = SweetFactory(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,18 +18,16 @@ class Homework10Activity : AppCompatActivity() {
         setContentView(binding.root)
 
         val sweetsList = mutableListOf<Sweet>()
-        sweetFactory.createThreeHundredSweets()
 
-        val sweetAdapter = SweetAdapter(sweetsList, this)
+        val sweetAdapter = SweetAdapter(sweetsList)
         binding.sweetsRecycler.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding.sweetsRecycler.adapter = sweetAdapter
 
         binding.bvShowSweets.setOnClickListener {
             binding.bvShowSweets.visibility = View.GONE
-            myViewModel.getSweetsInLiveData()
             myViewModel.sweetLiveData.observe(this, {
-                sweetAdapter.updateList(sweetFactory.sweetsList)
+                sweetAdapter.updateList(it)
             })
             binding.sweetsRecycler.adapter = sweetAdapter
         }

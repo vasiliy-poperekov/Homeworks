@@ -12,8 +12,7 @@ import com.example.homeworks.R
 import com.example.homeworks.databinding.ItemSweetsBinding
 
 class SweetAdapter(
-    private val sweetsList: MutableList<Sweet>,
-    private val context: Context
+    private val sweetsList: MutableList<Sweet>
 ) : RecyclerView.Adapter<SweetAdapter.SweetViewHolder>() {
 
     override fun getItemCount(): Int = sweetsList.size
@@ -24,7 +23,7 @@ class SweetAdapter(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
-            ), context
+            )
         )
     }
 
@@ -39,14 +38,13 @@ class SweetAdapter(
     }
 
     class SweetViewHolder(
-        private val bindingView: ItemSweetsBinding,
-        private val context: Context
+        private val bindingView: ItemSweetsBinding
     ) :
         RecyclerView.ViewHolder(bindingView.root) {
 
         fun bind(item: Sweet) {
-            bindingView.brand.text = context.getString(R.string.brand) + item.brand
-            bindingView.code.text = context.getString(R.string.code) + item.code
+            bindingView.brand.text = bindingView.root.context.getString(R.string.brand) + item.brand
+            bindingView.code.text = bindingView.root.context.getString(R.string.code) + item.code
             Glide.with(bindingView.sweetsImage).load(item.urlPackage).into(bindingView.sweetsImage)
         }
     }
