@@ -11,19 +11,25 @@
         android:id="@+id/bv_btn_to_homework6"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:text="Button to homework 6"
+        android:text="@string/button_to_homework_6"
         />
     <Button
         android:id="@+id/bv_btn_to_homework7"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:text="Button to homework 7"
+        android:text="@string/button_to_homework_7"
         />
     <Button
         android:id="@+id/bv_btn_to_homework10"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:text="Button to homework 10"
+        android:text="@string/button_to_homework_10"
+        />
+    <Button
+        android:id="@+id/bv_btn_to_homework13"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="@string/button_to_homework_13"
         />
 
 </LinearLayout>

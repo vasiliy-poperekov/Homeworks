@@ -1,7 +1,5 @@
 package com.example.homeworks.homework10
 
-import android.content.Context
-import com.example.homeworks.R
 import kotlin.random.Random
 
 class SweetFactory {

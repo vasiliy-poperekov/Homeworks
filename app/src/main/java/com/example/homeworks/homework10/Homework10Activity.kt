@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.homeworks.R
 import com.example.homeworks.databinding.ActivityHomework10Binding
 
 class Homework10Activity : AppCompatActivity() {

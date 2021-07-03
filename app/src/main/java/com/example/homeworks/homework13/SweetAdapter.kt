@@ -1,25 +1,29 @@
-package com.example.homeworks.homework10
+package com.example.homeworks.homework13
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.homeworks.R
 import com.example.homeworks.databinding.ItemSweetsBinding
+import com.example.homeworks.databinding.ItemSweetsCodeBinding
+import com.example.homeworks.homework10.Sweet
 
 class SweetAdapter(
-    private val sweetsList: MutableList<Sweet>
+    private val sweetsList: MutableList<Sweet> = mutableListOf<Sweet>(),
+    private val click: (Sweet) -> Unit
 ) : RecyclerView.Adapter<SweetAdapter.SweetViewHolder>() {
 
     override fun getItemCount(): Int = sweetsList.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SweetViewHolder {
         return SweetViewHolder(
-            ItemSweetsBinding.inflate(
+            ItemSweetsCodeBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
-            )
+            ), click
         )
     }
 
@@ -33,13 +37,15 @@ class SweetAdapter(
     }
 
     class SweetViewHolder(
-        private val bindingView: ItemSweetsBinding
+        private val bindingView: ItemSweetsCodeBinding,
+        private var click: (Sweet) -> Unit
     ) :
         RecyclerView.ViewHolder(bindingView.root) {
         fun bind(item: Sweet) {
-            bindingView.brand.text = bindingView.root.context.getString(R.string.brand) + item.brand
             bindingView.code.text = bindingView.root.context.getString(R.string.code) + item.code
-            Glide.with(bindingView.sweetsImage).load(item.urlPackage).into(bindingView.sweetsImage)
+            itemView.setOnClickListener {
+                click(item)
+            }
         }
     }
 }
