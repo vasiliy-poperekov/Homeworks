@@ -12,7 +12,7 @@ class FragmentWithCodeViewModel : ViewModel() {
         getSweetsInLiveData()
     }
 
-    private fun getSweetsInLiveData(){
+    private fun getSweetsInLiveData() {
         sweetLiveData.value = SweetFactory().createThreeHundredSweets()
     }
 }

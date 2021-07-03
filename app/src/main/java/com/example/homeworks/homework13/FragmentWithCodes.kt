@@ -12,7 +12,7 @@ import com.example.homeworks.homework10.Sweet
 
 class FragmentWithCodes(
     private val reverseFragment: () -> Unit
-): Fragment() {
+) : Fragment() {
 
     var binding: FragmentSweetsCodesBinding? = null
     private val viewModel: FragmentWithCodeViewModel by viewModels()
@@ -29,7 +29,7 @@ class FragmentWithCodes(
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val sweetAdapter = SweetAdapter(click = {saveSweet(it)})
+        val sweetAdapter = SweetAdapter(click = { saveSweet(it) })
 
         viewModel.sweetLiveData.observe(viewLifecycleOwner, {
             sweetAdapter.updateList(it)
@@ -39,7 +39,7 @@ class FragmentWithCodes(
         binding!!.sweetsRecyclerInFragment1.adapter = sweetAdapter
     }
 
-    private fun saveSweet(sweet : Sweet){
+    private fun saveSweet(sweet: Sweet) {
         val bundle = Bundle()
         bundle.putSerializable(CLICKED_SWEET, sweet)
         (activity as Homework13Activity).bundle = bundle
@@ -51,7 +51,7 @@ class FragmentWithCodes(
         binding = null
     }
 
-    companion object{
+    companion object {
         const val CLICKED_SWEET = "CLICKED_SWEET"
         const val FIRST_FRAG_TAG = "FIRST_FRAG_TAG"
     }
