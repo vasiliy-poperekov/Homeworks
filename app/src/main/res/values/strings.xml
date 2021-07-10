@@ -8,7 +8,7 @@
     <string name="enter_password">Введите пароль</string>
     <string name="button_text">Timer -1</string>
     <string name="btn_close">close</string>
-    <string name="enter_text">Войти</string>
+    <string name="enter">Войти</string>
     <string name="brand">Брэнд</string>
     <string name="code">Штрих-код</string>
     <string name="mars_img_url">https://images-na.ssl-images-amazon.com/images/I/41AeTKhQ8vL._AC_.jpg</string>
@@ -23,4 +23,6 @@
     <string name="button_to_homework_7">Button to homework 7</string>
     <string name="button_to_homework_10">Button to homework 10</string>
     <string name="button_to_homework_13">Button to homework 13</string>
+    <string name="enter_text">Введите текст</string>
+    <string name="button_to_homework_16">Button to homework 16</string>
 </resources>
