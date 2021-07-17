@@ -25,4 +25,10 @@
     <string name="button_to_homework_13">Button to homework 13</string>
     <string name="enter_text">Введите текст</string>
     <string name="button_to_homework_16">Button to homework 16</string>
+    <string name="button_to_homework_17">button to homework 17</string>
+    <string name="search_on_limit">Поиск по лимиту</string>
+    <string name="search_on_id">Поиск по id</string>
+    <string name="show">show</string>
+    <string name="sort_on_id">Сортировка по name</string>
+    <string name="enter_currency_limit">Введите лимит валют</string>
 </resources>

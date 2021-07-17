@@ -22,6 +22,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_KEY", '"4796647d-f4e9-470f-8ed9-21a178228ec1"'
+        }
+        debug{
+            buildConfigField "String", "API_KEY", '"4796647d-f4e9-470f-8ed9-21a178228ec1"'
         }
     }
     compileOptions {
@@ -57,4 +61,13 @@ dependencies {
     implementation "androidx.room:room-ktx:2.3.0" //для корутин в Room
     kapt "androidx.room:room-compiler:2.3.0" //Room основная либа
     implementation "androidx.room:room-runtime:2.3.0" //Room основная либа
+
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+    implementation "com.google.code.gson:gson:2.8.7"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.14.1"
+
+    implementation "org.koin:koin-androidx-viewmodel:2.0.1"
+    implementation "org.koin:koin-android:2.0.1"
+
 }

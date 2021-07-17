@@ -35,5 +35,4 @@ class Homework16ActivityViewModelFactory(
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return Homework16ActivityViewModel(messageRepository) as T
     }
-
 }

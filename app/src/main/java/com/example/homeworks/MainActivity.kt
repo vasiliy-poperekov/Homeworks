@@ -9,6 +9,7 @@ import com.example.homeworks.databinding.ActivityMainBinding
 import com.example.homeworks.homework10.Homework10Activity
 import com.example.homeworks.homework13.Homework13Activity
 import com.example.homeworks.homework16.Homework16Activity
+import com.example.homeworks.homework17.Homework17Activity
 import com.example.homeworks.homework7.Homework7
 import com.example.homeworks.homework6.Homework6Activity as Homework6Activity
 
@@ -37,6 +38,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this, Homework16Activity::class.java)
                 startActivity(intent)
             }
+            R.id.bv_btn_to_homework17 -> {
+                val intent = Intent(this, Homework17Activity::class.java)
+                startActivity(intent)
+            }
         }
     }
 
@@ -59,6 +64,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
         binding.bvBtnToHomework16.setOnClickListener {
             onClick(binding.bvBtnToHomework16)
+        }
+        binding.bvBtnToHomework17.setOnClickListener {
+            onClick(binding.bvBtnToHomework17)
         }
     }
 }

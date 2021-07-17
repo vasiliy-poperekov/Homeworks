@@ -31,12 +31,17 @@
         android:layout_height="75dp"
         android:text="@string/button_to_homework_13"
         />
-
     <Button
         android:id="@+id/bv_btn_to_homework16"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:text="@string/button_to_homework_16"
+        />
+    <Button
+        android:id="@+id/bv_btn_to_homework17"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="@string/button_to_homework_17"
         />
 
 </LinearLayout>
